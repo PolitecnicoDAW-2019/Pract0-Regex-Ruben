@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Formulario</title>
+    <style>
+            .container {
+                width: 500px;
+                clear: both;
+            }
+
+            .iconCamera {
+                background: url('https://www.tutorialspoint.com/videotutorials/images/coding_ground_home.jpg') no-repeat;
+                width:20px;
+                height:20px;
+                display: inline-block;
+}
+    
+            .container input {
+                width: 100%;
+                clear: both;
+            }
+    
+            fieldset
+            {
+                border: 1px solid #ddd !important;
+                margin: 0;
+                padding: 10px;
+                position: relative;
+                border-radius:4px;
+                background-color:#f5f5f5;
+                padding-left:10px!important;
+            }
+    
+            legend
+            {
+                font-size:14px;
+                font-weight:bold;
+                margin-bottom: 0px;
+                width: 35%;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 5px 5px 5px 10px;
+                background-color: #ffffff;
+            }
+        </style>
+</head>
+<body style="background-color: #38444d">
+        <div class="container">
+                <br><br>
+                <fieldset>
+                    <legend>Form:</legend>
+                    <div class="panel panel-default">
+                <form id="form"> 
+                    <div class="form-group">
+                        <label for="nombre">Name: </label><input type="text" class="form-control" id="name" name="name" size="20px" placeholder="Text name" required>
+                        <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                        <img style="float: right" width="20" hidden height="20" src="resources/tick.svg">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Last names: </label><input type="text" class="form-control" id="lastNames" name="lastNames" size="20px" placeholder="Text last names" required>
+                        <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                        <img style="float: right" width="20" hidden height="20" src="resources/tick.svg">
+                    </div>
+                    <div class="form-group">
+                            <label for="nombre">Email: </label><input type="text" class="form-control" id="email" name="email" size="20px" placeholder="Text email" required>
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" hidden height="20" src="resources/tick.svg">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="country" id="inlineRadio1" value="spain" checked="checked">
+                        <label class="form-check-label" for="inlineRadio1">España</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="country" id="inlineRadio2" value="usa">
+                        <label class="form-check-label" for="inlineRadio2">USA</label>
+                    </div><br><br>
+                    <div id="usa" style="display: none">
+                        <div class="form-group">
+                            <label for="nombre">Date of birth: </label><input type="text" class="form-control" id="birthdayUsa" name="inputUsa" size="20px" placeholder="MM/DD/YYYY">
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" name="usa" hidden height="20" src="resources/tick.svg">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Address: </label><input type="text" class="form-control" id="addressUsa" name="inputUsa" size="20px" placeholder="Text address">
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" name="usa" hidden height="20" src="resources/tick.svg">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Postal code: </label><input type="text" class="form-control" id="PCUsa" name="inputUsa" size="20px" placeholder="Text Postal code">
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" name="usa" hidden height="20" src="resources/tick.svg">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Landline number: </label><input type="text" class="form-control" id="landLineUsa" name="inputUsa" size="20px" placeholder="Text landline number">
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" name="usa" hidden height="20" src="resources/tick.svg">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Phone number: </label><input type="text" class="form-control" id="phoneUsa" name="inputUsa" size="20px" placeholder="Text phone number">
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" name="usa" hidden height="20" src="resources/tick.svg">
+                        </div>
+                    </div>
+                    <div id="spain">
+                        <div class="form-group">
+                            <label for="nombre">Date of birth: </label><input type="text" class="form-control" id="birthdaySpain" name="inputSpain" size="20px" placeholder="DD/MM/YYYY" required>
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" name="spain" hidden height="20" src="resources/tick.svg">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Address: </label><input type="text" class="form-control" id="addressSpain" name="inputSpain" size="20px" placeholder="Text address" required>
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" name="spain" hidden height="20" src="resources/tick.svg">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Postal code: </label><input type="text" class="form-control" id="PCSpain" name="inputSpain" size="20px" placeholder="Text Postal code" required>
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" name="spain" hidden height="20" src="resources/tick.svg">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Landline number: </label><input type="text" class="form-control" id="landLineSpain" name="inputSpain" size="20px" placeholder="Text landline number" required>
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" name="spain" hidden height="20" src="resources/tick.svg">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Phone number: </label><input type="text" class="form-control" id="phoneSpain" name="inputSpain" size="20px" placeholder="Text phone number" required>
+                            <img style="float: right" hidden width="20" height="20" src="resources/x.svg">
+                            <img style="float: right" width="20" name="spain" hidden height="20" src="resources/tick.svg">
+                        </div>
+                    </div>
+                    <button type="submit" disabled style="background-color: #38444d" class="btn btn-primary" id="submitButton">Send</button>
+                </form>
+                    </div>
+                </fieldset>
+            </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="service/formService.js"></script>
+    <script src="view/formView.js"></script>
+    <script src="controller/formController.js"></script>
+    <script src="aPP.js"></script>
+</body>
+</html>
