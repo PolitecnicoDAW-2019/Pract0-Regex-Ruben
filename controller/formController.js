@@ -24,11 +24,11 @@ class formController {
     ChangeStatus(input, status){
         const redX= input.nextElementSibling
         if(status){
-            redX.hidden=true;
-            redX.nextElementSibling.hidden=false;
+            redX.style.display = "none";
+            redX.nextElementSibling.style.display = "block";
         } else {
-            redX.hidden=false;
-            redX.nextElementSibling.hidden=true;
+            redX.style.display = "block";
+            redX.nextElementSibling.style.display="none";
         }
     }
 
